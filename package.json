@@ -20,6 +20,7 @@
   },
   "main": "main.js",
   "scripts": {
+    "electron": "electron .",
     "start": "react-scripts start && electron .",
     "build": "react-scripts build",
     "test": "react-scripts test",

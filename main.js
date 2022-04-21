@@ -5,11 +5,14 @@ const path = require('path')
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 1980,
-    height: 1200,
+    width: 900,
+    height: 650,
+    resizable: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
-    }
+    },
+    autoHideMenuBar: true
+    
   })
 
   // and load the index.html of the app.
